@@ -6,9 +6,20 @@
 
 %define vendor_pretty Samsung
 %define device_pretty Samsung Note 5
+%define droid_target_aarch64 aarch64
 
 %define installable_zip 1
 
+%define straggler_files \
+/bugreports\
+/d\
+/file_contexts.bin\
+/property_contexts\
+/sdcard\
+/selinux_version\
+/service_contexts\
+/vendor\
+%{nil}
 %include rpm/dhd/droid-hal-device.inc
 
 # IMPORTANT if you want to comment out any macros in your .spec, delete the %
