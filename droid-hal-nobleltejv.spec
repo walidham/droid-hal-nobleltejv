@@ -10,6 +10,12 @@
 
 %define installable_zip 1
 
+%define enable_kernel_update 1
+
+%define android_config \
+#define MALI_QUIRKS 1\
+%{nil}
+
 %define straggler_files \
 /bugreports\
 /d\
